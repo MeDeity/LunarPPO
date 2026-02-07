@@ -1,0 +1,16 @@
+training:
+  total_timesteps: 1000000
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+
+ppo:
+  clip_epsilon: 0.2
+  entropy_coef: 0.01
+  value_coef: 0.5
+  update_epochs: 10
+  batch_size: 64
+
+network:
+  hidden_sizes: [64, 64]
+  activation: relu

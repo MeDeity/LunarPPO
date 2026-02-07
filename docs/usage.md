@@ -30,6 +30,9 @@ python scripts/evaluate.py --model models/ --episodes 100 --save
 ```bash
 python scripts/play_human.py
 ```
+- 控制键：← 左引擎、↑ 主引擎、→ 右引擎；无按键=0
+- 渲染与交互采用非阻塞事件轮询，窗口卡死时请确认使用 pygame-ce 并保持 60 FPS
+- 环境版本：LunarLander-v3（Gymnasium 最新版本）
 
 ## 日志与可视化
 - 训练日志与指标输出建议写入 `logs/`

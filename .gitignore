@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+venv310/
+env/
+pip-log.txt
+
+# IDE/Editor
+.vscode/
+.idea/
+.DS_Store
+
+# Build
+build/
+dist/
+
+# Project artifacts
+logs/
+models/
+results/
+
+# Data/plots
+*.png
+*.svg
+*.csv
+
+# Checkpoints
+*.pt
+*.pth
+
+# TensorBoard
+events.out.tfevents.*
+
+# Misc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

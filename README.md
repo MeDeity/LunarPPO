@@ -1,12 +1,3 @@
-# 项目名称建议
-
-**Lunar PPO Landing** | **MoonPPO** | **LunarRL** | **PPO-Lander** | **Lunar Descent AI**
-
-推荐使用 **LunarPPO** - 简洁明了，结合了"月球"和PPO算法。
-
-# README.md
-
-```markdown
 # LunarPPO - 基于PPO算法的月球着陆强化学习项目
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -51,6 +42,13 @@ LunarPPO/
 └── requirements.txt          # 项目依赖
 ```
 
+## 📖 文档入口
+
+- 教学与实现文档主页：[docs/README.md](file:///d:/Project/LunarPPO/docs/README.md)
+- 入门指南：[docs/getting-started.md](file:///d:/Project/LunarPPO/docs/getting-started.md)
+- 架构设计：[docs/architecture.md](file:///d:/Project/LunarPPO/docs/architecture.md)
+- 模块 API 说明：[docs/api-reference.md](file:///d:/Project/LunarPPO/docs/api-reference.md)
+- 使用指南（训练与评估）：[docs/usage.md](file:///d:/Project/LunarPPO/docs/usage.md)
 ## 🛠️ 快速开始
 
 ### 1. 环境配置
@@ -60,12 +58,18 @@ LunarPPO/
 git clone https://github.com/yourusername/LunarPPO.git
 cd LunarPPO
 
-# 创建虚拟环境（推荐）
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或 venv\Scripts\activate  # Windows
+# Windows（推荐使用 Python 3.10）
+# 安装 Python 3.10（已安装可跳过）
+winget install Python.Python.3.10
+# 创建并激活虚拟环境
+py -3.10 -m venv venv310
+.\venv310\Scripts\activate
+# 安装依赖（3.10 环境下）
+.\venv310\Scripts\python -m pip install -r requirements.txt
 
-# 安装依赖
+# Linux/Mac
+python3.10 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -101,6 +105,8 @@ python scripts/evaluate.py --model models/ --episodes 100 --save
 # 与AI对战（看看你能不能比AI飞得更好！）
 python scripts/play_human.py
 ```
+- 控制键：← 左引擎、↑ 主引擎、→ 右引擎；无按键=0
+- 渲染采用非阻塞事件轮询；若窗口卡顿，请使用 pygame-ce 并确保 60 FPS
 
 ## 🔧 核心PPO算法实现
 
