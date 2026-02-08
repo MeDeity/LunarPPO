@@ -3,13 +3,14 @@
 欢迎来到 LunarPPO 教学与实现文档。这里将系统化地整理项目背景、实现步骤、教学材料与使用指南，帮助你从零搭建并掌握基于 PPO 的月球着陆强化学习项目。
 
 ## 文档导航
-- 入门指南：详见 [getting-started.md](file:///d:/Project/LunarPPO/docs/getting-started.md)
-- 使用指南：训练与评估，详见 [usage.md](file:///d:/Project/LunarPPO/docs/usage.md)
-- 算法讲解：PPO 与 GAE，详见 [algorithm-ppo.md](file:///d:/Project/LunarPPO/docs/algorithm-ppo.md)
-- 教学计划：周度学习安排，详见 [project-plan.md](file:///d:/Project/LunarPPO/docs/project-plan.md)
-- 架构图（Mermaid）：详见 [architecture-diagram.md](file:///d:/Project/LunarPPO/docs/architecture-diagram.md)
-- 调参案例：详见 [tuning-cases.md](file:///d:/Project/LunarPPO/docs/tuning-cases.md)
-- 实验模板（参数与日志约定）：详见 [experiment-template.md](file:///d:/Project/LunarPPO/docs/experiment-template.md)
+- 入门指南：详见 [getting-started.md](./getting-started.md)
+- 使用指南：训练与评估，详见 [usage.md](./usage.md)
+- 算法讲解：PPO 与 GAE，详见 [algorithm-ppo.md](./algorithm-ppo.md)
+- 教学计划：周度学习安排，详见 [project-plan.md](./project-plan.md)
+- 架构图（Mermaid）：详见 [architecture-diagram.md](./architecture-diagram.md)
+- 调参案例：详见 [tuning-cases.md](./tuning-cases.md)
+- 实验模板（参数与日志约定）：详见 [experiment-template.md](./experiment-template.md)
+- 数学基础：MDP、价值函数、策略梯度、PPO/GAE，详见 [math-foundations.md](./math-foundations.md)
 
 ## 项目概述
 LunarPPO 旨在用近端策略优化（PPO）训练智能体在 LunarLander-v2 环境中稳定着陆。项目同时面向教学用途，提供从概念到实现到可视化的成体系资料。
